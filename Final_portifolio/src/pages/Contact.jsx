@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import axios from "axios";
 import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
-const BACKEND_URL = import.meta.env.VITE_REACT_APP_BACKEND_BASEURL;
-
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -22,7 +20,7 @@ const Contact = () => {
     setResponseMessage("");
 
     try {
-      const response = await axios.post(BACKEND_URL, formData);
+      const response = await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/contact`, formData);
       setResponseMessage(response.data.message);
       setFormData({ name: "", email: "", message: "" }); // Clear form
     } catch (error) {

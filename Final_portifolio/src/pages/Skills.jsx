@@ -11,6 +11,7 @@ import pythonpng from '../assets/pythonpng.png';
 
 const Skills = () => {
     const [isHovered, setIsHovered] = useState(false);
+    const [isTouched, setIsTouched] = useState(false);
     const [containerSize, setContainerSize] = useState({ width: 450, height: 400 });
 
     const logos = [
@@ -24,11 +25,12 @@ const Skills = () => {
         { src: pythonpng, name: 'Python' },
     ];
 
-
     useEffect(() => {
         const handleResize = () => {
             const width = window.innerWidth;
-            if (width < 640) { // sm
+            if (width < 480) { // Extra small devices
+                setContainerSize({ width: 280, height: 280 });
+            } else if (width < 640) { // sm
                 setContainerSize({ width: 320, height: 320 });
             } else if (width < 768) { // md
                 setContainerSize({ width: 400, height: 400 });
@@ -56,11 +58,20 @@ const Skills = () => {
     `;
 
     // Calculate dynamic sizes based on container size
-    const orbitRadius = containerSize.width * 0.4; // Increased from 0.375 to 0.4
-    const logoSize = containerSize.width * 0.18; // Increased from 0.15 to 0.18
-    const centerLogoSize = containerSize.width * 0.25; // Increased from 0.2 to 0.25
-    const fontSize = containerSize.width * 0.04; // Increased from 0.035 to 0.04
-    const centerFontSize = containerSize.width * 0.06; // Increased from 0.05 to 0.06
+    const orbitRadius = containerSize.width * 0.37; // Adjusted for better mobile spacing
+    const logoSize = Math.max(containerSize.width * 0.16, 32); // Ensure minimum size on small screens
+    const centerLogoSize = containerSize.width * 0.25;
+    const fontSize = containerSize.width * 0.04;
+    const centerFontSize = Math.max(containerSize.width * 0.06, 14); // Ensure minimum font size
+
+    // Handle touch events for mobile
+    const handleTouchStart = () => {
+        setIsTouched(true);
+    };
+
+    const handleTouchEnd = () => {
+        setIsTouched(false);
+    };
 
     return (
         <div className="w-full">
@@ -81,9 +92,11 @@ const Skills = () => {
                         className="absolute w-full h-full flex items-center justify-center"
                         onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => setIsHovered(false)}
+                        onTouchStart={handleTouchStart}
+                        onTouchEnd={handleTouchEnd}
                         style={{
-                            animation: `spin 10s linear infinite`,
-                            animationPlayState: isHovered ? 'paused' : 'running',
+                            animation: `spin 14s linear infinite`,
+                            animationPlayState: (isHovered || isTouched) ? 'paused' : 'running',
                         }}
                     >
                         {logos.map((logo, index) => {
@@ -99,6 +112,7 @@ const Skills = () => {
                                         transform: rotation,
                                         backgroundColor: '#ffffff',
                                         boxShadow: '0 0 15px rgba(255, 255, 255, 0.2)',
+                                        zIndex: 10,
                                     }}
                                 >
                                     <img
@@ -114,8 +128,8 @@ const Skills = () => {
                                 </div>
                             );
                         })}
-
                     </div>
+                    
                     {/* Center Logo */}
                     <div
                         className="absolute flex items-center justify-center rounded-full"
@@ -128,7 +142,7 @@ const Skills = () => {
                         }}
                     >
                         <span
-                            className="text-white font-bold"
+                            className="text-white font-bold text-center"
                             style={{ fontSize: `${centerFontSize}px` }}
                         >
                             SKILLS

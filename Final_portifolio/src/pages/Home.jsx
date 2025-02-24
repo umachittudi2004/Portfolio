@@ -95,7 +95,6 @@ const Home = () => {
         >
           Know Me
         </motion.button>
-
       </div>
     </>
   );

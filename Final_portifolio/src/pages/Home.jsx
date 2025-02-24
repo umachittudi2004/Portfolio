@@ -85,7 +85,7 @@ const Home = () => {
             console.log("Button clicked!"); // Check if this logs
             try {
               window.open(
-                "https://drive.google.com/file/d/1p7kF_okxvcvCMu1RPs1Z1-Gt_pzfQEK2/view?usp=sharing",
+                "https://drive.google.com/file/d/1iIRsjEieOVGbQCd13zfsEf-S_NlS3-aw/view?usp=sharing",
                 "_blank"
               );
             } catch (error) {

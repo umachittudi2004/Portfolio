@@ -65,7 +65,7 @@ const About = () => {
               }}
             />
           </motion.div>
-          
+
         </motion.div>
 
         {/* Text Section */}
@@ -89,9 +89,9 @@ const About = () => {
             create digital solutions that leave a lasting impact.
           </p>
           <div className='' >Please feel free To Reach Out</div>
-          
+
         </motion.div>
-        
+
       </motion.div>
     </div>
   );

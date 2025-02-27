@@ -207,6 +207,15 @@ export const Projects = () => {
       githubUrl: "https://github.com/example/treks-and-travels"
     },
     {
+      heading: "JNTUK SGPA Calculator",
+      subheading: "Academic Performance Calculator",
+      imgSrc: crex,
+      description: "A simple web application to calculate SGPA and CGPA for JNTUK students With features like CSV file upload to view branch wise results.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      liveUrl: "https://jntuk-sgpa-cgpa-calculator.example.com",
+      githubUrl: "https://github.com/example/jntuk-sgpa-cgpa-calculator"
+    },
+    {
       heading: "Victory Vault",
       subheading: "Sports Score Tracker",
       imgSrc: crex,
@@ -215,15 +224,7 @@ export const Projects = () => {
       liveUrl: "https://victory-vault.example.com",
       githubUrl: "https://github.com/example/victory-vault"
     },
-    {
-      heading: "JNTUK SGPA Calculator",
-      subheading: "Academic Performance Calculator",
-      imgSrc: crex,
-      description: "A simple web application to calculate SGPA and CGPA for JNTUK students With features like CSV file upload to view branch wise results.",
-      technologies: ["HTML", "CSS", "JavaScript"],
-      liveUrl: "https://jntuk-sgpa-cgpa-calculator.example.com",
-      githubUrl: "https://github.com/example/jntuk-sgpa-cgpa-calculator"
-    }
+    
   ];
 
   return (

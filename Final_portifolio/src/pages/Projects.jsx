@@ -210,7 +210,7 @@ export const Projects = () => {
       heading: "JNTUK SGPA Calculator",
       subheading: "Academic Performance Calculator",
       imgSrc: cal,
-      description: "A simple web application to calculate SGPA and CGPA for JNTUK students With features like CSV file upload to view branch wise results.",
+      description: "A simple web application to calculate SGPA for JNTUK students With features like CSV file upload to view branch wise results.",
       technologies: ["HTML", "CSS", "JavaScript"],
       liveUrl: "https://jntuk-sgpa-cgpa-calculator.example.com",
       githubUrl: "https://github.com/example/jntuk-sgpa-cgpa-calculator"

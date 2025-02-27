@@ -209,7 +209,7 @@ export const Projects = () => {
     {
       heading: "JNTUK SGPA Calculator",
       subheading: "Academic Performance Calculator",
-      imgSrc: crex,
+      imgSrc: cal,
       description: "A simple web application to calculate SGPA and CGPA for JNTUK students With features like CSV file upload to view branch wise results.",
       technologies: ["HTML", "CSS", "JavaScript"],
       liveUrl: "https://jntuk-sgpa-cgpa-calculator.example.com",
@@ -218,7 +218,7 @@ export const Projects = () => {
     {
       heading: "Victory Vault",
       subheading: "Sports Score Tracker",
-      imgSrc: cal,
+      imgSrc: crex,
       description: "Real-time sports score tracking application statistical analysis for multiple sports leagues.",
       technologies: ["React", "Tailwind", "Chart.js", "Node.js", "Express"],
       liveUrl: "https://victory-vault.example.com",

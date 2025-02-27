@@ -5,6 +5,7 @@ import { IoCloseSharp } from "react-icons/io5";
 import beach from '../assets/beach.jpg';
 import HeaderText from '../components/HeaderText';
 import crex from '../assets/cric_victoryvault.png';
+import cal from '../assets/CAL SGPA.png';
 
 // Modal Component for Project Details
 const ProjectModal = ({ project, isOpen, onClose }) => {
@@ -213,6 +214,15 @@ export const Projects = () => {
       technologies: ["React", "Tailwind", "Chart.js", "Node.js", "Express"],
       liveUrl: "https://victory-vault.example.com",
       githubUrl: "https://github.com/example/victory-vault"
+    },
+    {
+      heading: "JNTUK SGPA Calculator",
+      subheading: "Academic Performance Calculator",
+      imgSrc: crex,
+      description: "A simple web application to calculate SGPA and CGPA for JNTUK students With features like CSV file upload to view branch wise results.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      liveUrl: "https://jntuk-sgpa-cgpa-calculator.example.com",
+      githubUrl: "https://github.com/example/jntuk-sgpa-cgpa-calculator"
     }
   ];
 

@@ -218,7 +218,7 @@ export const Projects = () => {
     {
       heading: "Victory Vault",
       subheading: "Sports Score Tracker",
-      imgSrc: crex,
+      imgSrc: cal,
       description: "Real-time sports score tracking application statistical analysis for multiple sports leagues.",
       technologies: ["React", "Tailwind", "Chart.js", "Node.js", "Express"],
       liveUrl: "https://victory-vault.example.com",

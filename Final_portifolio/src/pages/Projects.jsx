@@ -6,6 +6,7 @@ import beach from '../assets/beach.jpg';
 import HeaderText from '../components/HeaderText';
 import crex from '../assets/cric_victoryvault.png';
 import cal from '../assets/CAL SGPA.png';
+import chat from '../assets/image.png';
 
 // Modal Component for Project Details
 const ProjectModal = ({ project, isOpen, onClose }) => {
@@ -224,6 +225,15 @@ export const Projects = () => {
       liveUrl: "https://victory-vault.example.com",
       githubUrl: "https://github.com/example/victory-vault"
     },
+    {
+      heading: "Real Time Chat App",
+      subheading: "Instant Messaging Platform",
+      imgSrc: chat, // Placeholder image
+      description: "A real-time chat application that allows users to communicate instantly with features like file sharing, Data Privacy and One to One Interaction.",
+      technologies: ["React","Zustand","Socket.io", "Node.js", "Express"],
+      liveUrl: "https://chattify-i3y3.onrender.com",
+      githubUrl: "https://github.com/umachittudi2004/Chattify",
+    }
     
   ];
 

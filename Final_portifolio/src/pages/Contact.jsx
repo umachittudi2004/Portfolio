@@ -115,7 +115,7 @@ const Contact = () => {
 
           {/* Instagram */}
           <a
-            href="https://www.instagram.com/your-profile"
+            href="https://www.instagram.com/its_uma_chittudi"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white text-3xl hover:text-pink-500 transition duration-300"
@@ -125,7 +125,7 @@ const Contact = () => {
 
           {/* GitHub */}
           <a
-            href="https://github.com/your-profile"
+            href="https://github.com/umachittudi2004"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white text-3xl hover:text-gray-400 transition duration-300"

@@ -213,8 +213,8 @@ export const Projects = () => {
       imgSrc: cal,
       description: "A simple web application to calculate SGPA for JNTUK students With features like CSV file upload to view branch wise results.",
       technologies: ["HTML", "CSS", "JavaScript"],
-      liveUrl: "https://jntuk-sgpa-cgpa-calculator.example.com",
-      githubUrl: "https://github.com/example/jntuk-sgpa-cgpa-calculator"
+      liveUrl: "https://umachittudi2004.github.io/SGPACalculator",
+      githubUrl: "https://github.com/umachittudi2004/SGPACalculator"
     },
     {
       heading: "Victory Vault",
@@ -222,7 +222,7 @@ export const Projects = () => {
       imgSrc: crex,
       description: "Real-time sports score tracking application statistical analysis for multiple sports leagues.",
       technologies: ["React", "Tailwind", "Chart.js", "Node.js", "Express"],
-      liveUrl: "https://victory-vault.example.com",
+      liveUrl: "https://victory-vault.vercel.app",
       githubUrl: "https://github.com/example/victory-vault"
     },
     {

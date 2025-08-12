@@ -107,7 +107,7 @@ const Contact = () => {
           <a
             href="https://www.linkedin.com/in/uma-maheswara-rao-chittudi-15764125b/"
             target="_blank"
-            rel="noopener noreferrer"
+            // rel="noopener noreferrer"
             className="text-white text-3xl hover:text-blue-500 transition duration-300"
           >
             <FaLinkedin />

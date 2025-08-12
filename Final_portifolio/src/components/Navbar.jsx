@@ -52,9 +52,9 @@ const NavItem = ({ item }) => {
           animate={{ opacity: 1, y: 0 }}
           className="absolute whitespace-nowrap
                      -top-8 
-                     left-1/2 transform -translate-x-1/2 
+                     left-1/2 transform -translate-x-1/2
                      px-2 py-1
-                     bg-black text-white 
+                     bg-black text-white
                      text-xs
                      rounded-md
                      z-50"
@@ -74,6 +74,7 @@ const Navbar = () => {
     { path: "/skills", icon: <GiSkills />, label: "Skills" },
     { path: "/about", icon: <FaInfo />, label: "About" },
     { path: "/contact", icon: <IoMdContact/>, label: "Contact" },
+    // {path:"/certificates",icon:<FaCertificate/>,label:"Certificates"},
   ];
 
   return (

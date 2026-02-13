@@ -7,6 +7,7 @@ import HeaderText from '../components/HeaderText';
 import crex from '../assets/cric_victoryvault.png';
 import cal from '../assets/CAL SGPA.png';
 import chat from '../assets/image.png';
+import academic from '../assets/acadamic.png';
 
 // Modal Component for Project Details
 const ProjectModal = ({ project, isOpen, onClose }) => {
@@ -230,11 +231,29 @@ export const Projects = () => {
       subheading: "Instant Messaging Platform",
       imgSrc: chat, // Placeholder image
       description: "A real-time chat application that allows users to communicate instantly with features like file sharing, Data Privacy and One to One Interaction.",
-      technologies: ["React","Zustand","Socket.io", "Node.js", "Express"],
+      technologies: ["React", "Zustand", "Socket.io", "Node.js", "Express"],
       liveUrl: "https://chattify-i3y3.onrender.com",
       githubUrl: "https://github.com/umachittudi2004/Chattify",
+    },
+    {
+      heading: "Academic Management System",
+      subheading: "A Full-Scale Department Management System",
+      imgSrc: academic, // Placeholder image
+      description:
+        "A comprehensive MERN-based academic management platform designed to manage assignments, attendance, notices, and timetables. Features JWT authentication with role-based access, IP-based smart attendance automation, real-time messaging using Socket.io, and assignment submission with Google Drive integration. Built with a modular backend architecture and optimized database queries for scalability and maintainability.",
+      technologies: [
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "JWT Authentication",
+        "Socket.io",
+        "Google Drive API"
+      ],
+      liveUrl: "https://academic-management.netlify.app",
+      githubUrl: "https://github.com/umachittudi2004/Academic-Management-System",
     }
-    
+
   ];
 
   return (
